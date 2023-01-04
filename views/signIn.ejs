@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/link.ejs") %>
+    <link rel="stylesheet" href="./styles/Main.signIn.css" />
+    <link rel="stylesheet" href="./styles/Responsive.signIn.css" />
+    <title>Starbucks Coffee Company | Sign In</title>
+  </head>
+  <body>
+    <!-- start menu -->
+    <%- include("./partials/MenuBar.ejs") %>
+    <!-- end menu -->
+    <!-- start sign in -->
+    <div class="containerSignIn">
+      <div class="wapperSignIn">
+        <h2 class="h2SignIN">Sign in or create an account</h2>
+        <div class="container-signIN">
+          <div class="containerWarrperSignIN">
+            <form action="/SignIn" method="post">
+              <h5
+                style="
+                  font-family: SoDoSans, Helvetica Neue, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 1rem;
+                  font-weight: 400;
+                "
+              >
+                * indicates required field
+              </h5>
+              <div class="containerInput">
+                <input type="text" class="UserName" id="UserName" name="UserName" data-replace="* UserName or email address" placeholder="* UserName or email address" />
+              </div>
+              <div class="containerInput">
+                <input type="password" class="UserName" id="Password" name="Password" placeholder="* Password" />
+              </div>
+              <div class="containerCheckBox">
+                <input type="checkbox" class="CheckBox" id="CheckBox" name="CheckBox" />
+                <span  >
+                  Keep me signed in.
+                  <a href="#" class="greenCOLOR">
+                    Details
+                  </a>
+                </span>
+              </div>
+              <div class="containerInput">
+                <a href="#" class="greenCOLOR">
+                  Forget your userName?
+                </a>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end sign in -->
+  </body>
+</html>

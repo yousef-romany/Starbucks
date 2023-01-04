@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon-32x32.webp" />
+    <!-- style -->
+    <link rel="stylesheet" href="styles/Main.css" />
+    <link rel="stylesheet" href="styles/Responsive.css" />
+    <title>Starbucks Coffee Company</title>
+  </head>
+  <body
+  onload="loader()">
+    <div class="containerLoader">
+      <img src="images/icons8-coffee-cup.gif" alt="" srcset="">
+    </div>
+    <!-- start Menu -->
+    <%- include("./partials/MenuBar.ejs") %>
+    <!-- end Menu -->
+
+    <!-- start image one -->
+    <div class="containerImageOne">
+      <div class="containerimageLeft">
+        <img src="images/137-82414.jpg" />
+      </div>
+      <div class="containerimageRight">
+        <ul>
+          <li>
+            <p>Merry last-minute gifts</p>
+          </li>
+          <li>
+            <p class="containerMoreText">
+              Send holiday cheer in a flash with a thoughtful Starbucks eGift.
+            </p>
+          </li>
+          <li
+            style="
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+            "
+          >
+            <button class="containerButtonByNow">By now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end image one -->
+    <!-- start image two -->
+    <div class="containerImageTwo">
+      <div class="containerLeft">
+        <ul>
+          <li>
+            <p class="p1">Merry sips and trips</p>
+          </li>
+          <li>
+            <p class="p2">
+              Link your Starbucks® Rewards + Delta SkyMiles® accounts for
+              festive new benefits—like 1 mile for every $1* spent.
+            </p>
+          </li>
+          <li
+            style="
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+            "
+          >
+            <button>Link now</button>
+          </li>
+        </ul>
+      </div>
+      <div class="containerRight">
+        <img src="images/137-82415.jpg" />
+      </div>
+    </div>
+    <!-- end image two -->
+    <!-- start image three -->
+    <div class="containerImageThree">
+      <div class="containerLeft">
+        <img src="images/137-82416.png" alt="" />
+      </div>
+      <div class="containerRight">
+        <ul>
+          <li>
+            <p class="p1">Starbucks for Life</p>
+          </li>
+          <li>
+            <p class="p2">
+              ’Tis the season for everyone’s favorite holiday game! Play now for
+              your chance to win—millions of prizes await. **
+            </p>
+          </li>
+          <li
+            style="
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+            "
+          >
+            <button>Play now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end image three -->
+    <!-- start image four -->
+    <div class="containerImageFour">
+      <div class="containerimageLeft">
+        <img src="images/137-82377.jpg" />
+      </div>
+      <div class="containerimageRight">
+        <ul>
+          <li>
+            <p>Cozy caramel</p>
+          </li>
+          <li>
+            <p class="containerMoreText">
+              Our creamy and comforting Caramel Brulée Latte is the gift you
+              give yourself.
+            </p>
+          </li>
+          <li
+            style="
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+            "
+          >
+            <button class="containerButtonByNow">Order now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end image four -->
+    <!-- start image Five -->
+    <div class="containerImageFive">
+      <div class="containerimageLeft">
+        <img src="images/137-82417.webp" />
+      </div>
+      <div class="containerimageRight">
+        <ul>
+          <li>
+            <p>Heartwarming classic</p>
+          </li>
+          <li>
+            <p class="containerMoreText">
+              Savor a Signature Hot Chocolate, crafted with steamed milk and
+              chocolaty drizzle.
+            </p>
+          </li>
+          <li
+            style="
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+            "
+          >
+            <button class="containerButtonByNow">Order now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end image Five -->
+    <!-- start new section  -->
+    <ul class="containerSection">
+        <li>
+            <p>
+            *Excludes taxes and gratuities. At participating stores. Some restrictions apply. 150 Stars deposited after first qualifying Starbucks purchase. Flights purchased close to departure may not earn double Stars. Stars may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card reloads. For details, visit <a href="">deltastarbucks.com/terms</a> .</li>
+            </p>
+        <li>
+            <p>
+            **NO PURCHASE NECESSARY. Participating stores only. Starbucks partners (employees) are not eligible to win prizes. Ends 1/1/23. To play and for Official Rules, visit <a href="">https://www.starbucksforlife.com/</a>.
+        </p>
+        </li>
+    </ul>
+    <!-- end new section  -->
+    <!-- start footer -->
+      <%- include("./partials/footer.ejs") %>
+    <!-- end footer -->
+    <script src="scripts/Main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@media only screen and (max-width: 916px) {
+    .containerMenu {
+        height: 60px;
+    }
+    .containerMenuUl {
+        display: none;
+    }
+    .containerInner .containerRight {
+        display: none;
+    }
+    .menuButton , .menuBar  {
+        display: flex;
+    }
+    .containerImageOne , .containerImageTwo , .containerImageThree , .containerImageFour , .containerImageFive {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .containerimageLeft , .containerimageRight , .containerLeft , .containerRight {
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .containerLeft {
+        padding-top: 15px !important;
+    }
+    .containerImageThree .containerRight {
+        padding-top: 15px;
+    }
+    .containerFooter {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerAbout {
+        border-top: 1px solid rgb(0, 0, 0.5);
+        width: 100%;
+        height: fit-content;
+        margin-top: 30px;
+    }
+    .containerItem {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    .smallScreen{ 
+        display: flex;
+    }
+    .containerulFooter {
+        display: none;
+    }
+    .containerLeft {
+        height: 100% !important;
+        padding: 0 !important;
+    }
+}
